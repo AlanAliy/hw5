@@ -4,6 +4,7 @@
 #ifndef RECCHECK
 #include <set>
 #include <string>
+#include <unordered_set>
 #endif
 
 /**
@@ -21,5 +22,30 @@ std::set<std::string> wordle(
     const std::string& in,
     const std::string& floating,
     const std::set<std::string>& dict);
+
+
+    bool floating_checker(
+    std::string word,
+    const std::string& floating);
+
+
+std::set<std::string> wordle_helper(
+    const std::string& in,
+    const std::string& floating,
+    const std::set<std::string>& dict,
+    uint word_size,
+    std::string word,
+    std::string& alphabet,
+    std::set<std::string>& words
+);
+
+// std::unordered_set<std::string> load_dictionary(
+//     const std::string& in,
+//     const std::string& floating,
+//     const std::set<std::string>& dict);
+
+// std::vector<std::pair<int, char>> pos_finder(
+//      const std::string& in
+// );
 
 #endif
