@@ -2,7 +2,6 @@
 // For debugging
 #include <iostream>
 // For std::remove
-#include <algorithm> 
 #include <map>
 #include <set>
 #include <fstream>
