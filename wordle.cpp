@@ -68,7 +68,7 @@ std::set<std::string> wordle_helper(
 
 
 
-bool floating_checker(std::string& word, const std::string& floating) {
+bool floating_checker(std::string word, const std::string& floating) {
     for (char c : floating) {
         size_t pos = word.find(c);
         if (pos == std::string::npos) {
@@ -78,8 +78,4 @@ bool floating_checker(std::string& word, const std::string& floating) {
     }
     return true;
 }
-
-
-
-
 

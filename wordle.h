@@ -25,7 +25,7 @@ std::set<std::string> wordle(
 
 
     bool floating_checker(
-    std::string& word,
+    std::string word,
     const std::string& floating);
 
 
