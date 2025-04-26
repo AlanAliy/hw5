@@ -68,7 +68,7 @@ std::set<std::string> wordle_helper(
 
 
 
-bool floating_checker(std::string word, const std::string& floating) {
+bool floating_checker(std::string& word, const std::string& floating) {
     for (char c : floating) {
         size_t pos = word.find(c);
         if (pos == std::string::npos) {
@@ -78,29 +78,6 @@ bool floating_checker(std::string word, const std::string& floating) {
     }
     return true;
 }
-
-
-
-
-
-//this function will take in the details of the word given
-//and return a vector of pairs with each pair containing the psoition of the letter
-//and the letter itself
-// std::vector<std::pair<int, char>> pos_finder(
-//     const std::string& in
-// )
-// {
-//     std::vector<std::pair<int, char>> letter_loc_pairs;
-
-//     for(int i = 0; i < in.size(); i++) {
-//         if(isalpha(in[i])) {
-//             std::pair<int, char> letter_loc_pair = {i,in[i]};
-//             letter_loc_pairs.push_back(letter_loc_pair);
-//         }
-//     }
-//     return letter_loc_pairs;
-// }
-
 
 
 
